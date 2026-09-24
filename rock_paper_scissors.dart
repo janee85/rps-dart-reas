@@ -29,14 +29,7 @@ String getMove(String playerName) {
     }
   } while (validMove == null);
 
-  return 
-    stdout.write("Enter your move player 1(rock, paper, scissors): ");
-    String? playerOneMove = stdin.readLineSync();
-        for (int i = 0; i <= 30; i++) {
-            print("");
-        }
-    stdout.write("Enter your move player 2(rock, paper, scissors): ");
-    String? playerTwoMove = stdin.readLineSync();
+  return validMove;
 }
 
 String? validateMove(String? move) {
