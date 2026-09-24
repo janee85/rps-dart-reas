@@ -45,5 +45,19 @@ String? validateMove(String? move) {
 }
 
 String? decideWinner(String playerOneName, String playerOneMove, String playerTwoName, String playerTwoMove) {
-
+  if (playerOneMove == playerTwoMove) {
+    return null;
+  }
+  else if (playerOneMove == "rock" && playerTwoMove == "scissor") {
+    return playerOneName;
+  }
+  else if (playerOneMove == "paper" && playerTwoMove == "rock") {
+    return playerOneName;
+  }
+  else if (playerOneMove == "scissor" && playerTwoMove == "paper") {
+    return playerOneName;
+  }
+  else {
+    return playerTwoName;
+  }
 }
